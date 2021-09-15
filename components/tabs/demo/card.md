@@ -3,6 +3,7 @@ order: 8
 title:
   zh-CN: 卡片式页签
   en-US: Card type tab
+  ru-RU: Карточки
 ---
 
 ## zh-CN
@@ -24,14 +25,26 @@ function callback(key) {
 
 ReactDOM.render(
   <Tabs onChange={callback} type="card">
-    <TabPane tab="Tab 1" key="1">
+    <TabPane tab="Новости" key="1">
       Content of Tab Pane 1
     </TabPane>
-    <TabPane tab="Tab 2" key="2">
+    <TabPane tab="Медиагалерея" key="2">
       Content of Tab Pane 2
     </TabPane>
-    <TabPane tab="Tab 3" key="3">
+    <TabPane tab="Публикации" key="3">
       Content of Tab Pane 3
+    </TabPane>
+    <TabPane tab="Календарь событий" key="4">
+      Content of Tab Pane 4
+    </TabPane>
+    <TabPane tab="Пресс-релизы" key="5">
+      Content of Tab Pane 5
+    </TabPane>
+    <TabPane tab="Интервью" key="6">
+      Content of Tab Pane 6
+    </TabPane>
+    <TabPane tab="Выступления" key="7">
+      Content of Tab Pane 7
     </TabPane>
   </Tabs>,
   mountNode,
